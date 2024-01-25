@@ -18,10 +18,23 @@ public class FizzBuzzTest {
         assertEquals(expected,result);
     }
     @Test
-    public void notBuzzNumberTest(){
-        int inputNumber=11;
-        String result = FizzBuzz.fizzBuzzCheck(11);
-        String expected =Integer.toString(inputNumber);
+    public void fizzNumber123Test(){
+        int inputNumber=123;
+        String result = FizzBuzz.fizzBuzzCheck(123);
+        String expected ="Fizz";
+        assertEquals(expected,result);
+    }
+    @Test
+    public void fizzBuzzNumber154Test(){
+        String result = FizzBuzz.fizzBuzzCheck(154);
+        String expected ="Buzz";
+        assertEquals(expected,result);
+    }
+    @Test
+    public void fizzBuzzNumber1235Test(){
+        int inputNumber=1235;
+        String result = FizzBuzz.fizzBuzzCheck(1235);
+        String expected ="FizzBuzz";
         assertEquals(expected,result);
     }
 }
